@@ -6,7 +6,7 @@
  * Time: 10:36 AM
  */
 class Student{
-    /**
+    /*
      * Student constructor. constructor for a student
      */
     function __construct()
@@ -17,7 +17,7 @@ class Student{
         $this->grades = array();
     }
 
-    /**
+    /*
      * put an email into the emails array
      * @param $which what kind of email
      * @param $address the email
@@ -26,14 +26,14 @@ class Student{
         $this->emails[$which]=$address;
     }
 
-    /**
+    /*
      * put a grade into the grades array
      */
     function add_grade($grade){
         $this->grades[]=$grade;
     }
 
-    /**
+    /*
      * @return float|int calculate the average grade of the student
      */
     function average(){
@@ -44,7 +44,7 @@ class Student{
         return $total/count($this->grades);
     }
 
-    /**
+    /*
      * @return string output of a student
      */
     function toString() {
